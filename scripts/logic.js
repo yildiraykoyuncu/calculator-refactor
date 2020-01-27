@@ -16,6 +16,8 @@ const doMathTests = [
   { name: 'invalid - 1', args: ['tree', 0, 0], expected: 'invalid operation' },
   { name: 'invalid - 2', args: ['book', 0, 0], expected: 'invalid operation' },
   { name: 'invalid - 3', args: ['minus', 0, 0], expected: 'invalid operation' },
+  // write 7 more test cases for doMath
+
 ];
 
 // refactor the logic from the calculator tutorial into this function
@@ -38,17 +40,4 @@ function doMath(operation, a, b) {
 }
 
 
-// these lines of code test your function & log the results
-doMathTests.forEach(test => {
-  console.log('--- ' + test.name + ' ---');
-  try {
-    const didPass = doMath(...test.args) === test.expected;
-    if (didPass) {
-      console.log('%cPASS', 'color:green');
-    } else {
-      console.log('%cFAIL', 'color:orange');
-    }
-  } catch (err) {
-    console.log(err);
-  }
-});
+testing(doMath, doMathTests);
