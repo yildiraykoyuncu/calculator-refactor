@@ -23,7 +23,7 @@ const doMathTests = [
 // refactor the logic from the calculator tutorial into this function
 function doMath(operation, a, b) {
   // these if statements make sure all arguments are the correct type
-  // they will throw errors if your handler does not parseInt the user input
+  // they will throw errors if your handler passes the wrong type arguments
   if (typeof operation !== 'string') {
     throw new Error('operation should be a string');
   }
