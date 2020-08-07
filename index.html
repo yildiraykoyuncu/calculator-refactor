@@ -18,7 +18,27 @@
 </head>
 
 <body>
+    <section id="user-interface" class="container">
 
+        <form id="user-inputs">
+            <label for="input-1">Value-1</label>
+            <input type="text" id="input-1" name="firstInput">
+            <label for="input-2">Value-2</label>
+            <input type="text" id="input-2" name="secondInput">
+            <label for="operator">Chose operation</label>
+            <select name="operator" id="operator">
+              <option value="add">add</option>
+              <option value="subtract">subtract</option>
+              <option value="multiply">multiply</option>
+              <option value="divide">divide</option>
+            </select>
+            <button type="button" id="calculate">Calculate</button>
+        </form>
+
+
+        <code id="display"></code>
+
+    </section>
 
 
 
